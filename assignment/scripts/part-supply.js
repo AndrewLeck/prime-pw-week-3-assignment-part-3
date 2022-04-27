@@ -12,13 +12,14 @@ let supplyChanges = [ 3, 5, -6, 0, 7, 11];
 console.log('2. Array of supplyChanges:', supplyChanges);
 
 // 3. Console log the value of the second item in the 'supplyChanges' array
-console.log('3. Second supplyChange is:', [-6]);
+console.log('3. Second supplyChange is:',supplyChanges [1]);
+supplyChanges[1];
+console.log ('the value of the second item in supplyChanges is:', supplyChanges[1]);
 
 // 4. The last item was added by mistake. Remove it from the 'supplyChanges' 
 //    array & console.log the value removed.
-supplyChanges.pop();
-console.log('4. Removed item:',[11]);
-
+console.log('4. Removed item:',supplyChanges.pop());
+console.log(supplyChanges);
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 supplyChanges.push(25);
