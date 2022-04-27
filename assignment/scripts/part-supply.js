@@ -32,12 +32,13 @@ console.log('5. Adding 25 to supplyChanges.', supplyChanges);
 //    - if the value is negative, format the log as 'Removed x parts.' 
 console.log('6. Showing supplyChanges...');
 
+
 for(let i=0; i< supplyChanges.length; i++){
-    console.log( 'added parts.',supplyChanges[i]);
+    console.log( 'added', supplyChanges[i],' parts.');
     if( supplyChanges[i] < 0){
-         console.log('removed parts.');
+         console.log('removed',supplyChanges[i], 'parts.');
         }
-           if (supplyChanges[i] === 0){
+            if (supplyChanges[i] === 0){
             console.log( 'no change');
           }
 }
@@ -64,6 +65,12 @@ for(supply of supplyChanges){
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('8. Total supplies available is:');
 
+let totalNumber = 0;
+for(let i=0; i<supplyChanges.length; i++){
+    totalNumber += supplyChanges[i];
+}
+console.log( 'Total supplies available is:',totalNumber);
+
 // 9. We have a large stash of parts in our warehouse that we 
 //    need to box up and get ready for shipment. 
 //    There are 572 parts in total, and each box holds 7 parts.
@@ -71,3 +78,14 @@ console.log('8. Total supplies available is:');
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
+let totalBoxes = 567 / 7;
+let totalParts = 572;
+let partsLeft = 572 - 567;
+let index = 0;
+while(index < totalBoxes){
+    console.log('filling boxes with a "while" loop ', index)
+    index ++;
+    totalParts
+}
+console.log('How many boxes were filled:',totalBoxes);
+console.log('How many parts are left over:',partsLeft);
